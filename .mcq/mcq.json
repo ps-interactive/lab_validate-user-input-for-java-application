@@ -58,7 +58,7 @@
       "D": "Cross-Site Scripting (XSS) through serialized HTML content."
     },
     "answer": "C"
-  }
+  },
   {
     "question": "In the vulnerable `InsecureDeserialization.java` code, which specific method call represents the core point of the vulnerability?",
     "options": {
