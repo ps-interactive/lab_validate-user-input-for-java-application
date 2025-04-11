@@ -1,0 +1,20 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+In the vulnerable InsecureDeserialization.java code, which specific method call represents the core point of the vulnerability?
+{% /question %}
+{% option %}
+new FileInputStream(filename)
+{% /option %}
+{% option answer=true %}
+ois.readObject()
+{% /option %}
+{% option %}
+System.out.println()
+{% /option %}
+{% option %}
+new ObjectInputStream(fis)
+{% /option %}
+{% /choice %}
+
