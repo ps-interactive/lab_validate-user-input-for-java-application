@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+Why can buffer overflows occur in Java applications using JNI, despite Java's built-in memory safety?
+{% /question %}
+{% option %}
+Java's garbage collector has bugs related to native memory.
+{% /option %}
+{% option answer=true %}
+JNI allows calling native code (like C/C++) which runs outside JVM's direct memory management and may contain unsafe memory operations.
+{% /option %}
+{% option %}
+The System.loadLibrary call inherently corrupts memory.
+{% /option %}
+{% option %}
+All Java classes like String and ArrayList become unsafe when used with JNI.
+{% /option %}
+{% /choice %}
