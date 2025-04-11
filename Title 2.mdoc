@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+In the lab's initial vulnerable C code (NativeCLib.c), which function was primarily responsible for causing the buffer overflow?
+{% /question %}
+{% option %}
+printf
+{% /option %}
+{% option %}
+GetStringUTFChars
+{% /option %}
+{% option %}
+ReleaseStringUTFChars
+{% /option %}
+{% option answer=true %}
+strcpy
+{% /option %}
+{% /choice %}
