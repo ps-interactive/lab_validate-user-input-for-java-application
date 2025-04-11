@@ -1,0 +1,20 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+How does ValidatingObjectInputStream in SecureDeserialization.java prevent the exploit?
+{% /question %}
+{% option %}
+By encrypting the serialized data stream.
+{% /option %}
+{% option %}
+By automatically deleting any file named 'payload.ser'.
+{% /option %}
+{% option answer=true %}
+By checking the class being deserialized against a whitelist (using accept()) and throwing an exception if it's not allowed.
+{% /option %}
+{% option %}
+By limiting the size of the file that can be deserialized.
+{% /option %}
+{% /choice %}
+
