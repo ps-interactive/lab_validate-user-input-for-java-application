@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+How does using ByteBuffer (as shown in ByteBufferNativeJavaLib) help prevent buffer overflows when interacting with safely written JNI code?
+{% /question %}
+{% option %}
+ByteBuffer automatically encrypts data passed to native code.
+{% /option %}
+{% option answer=true %}
+The native code can query the ByteBuffer object (using JNI functions) to get its actual size/limit and respect those boundaries during access.
+{% /option %}
+{% option %}
+ByteBuffer prevents the native C code from using pointers.
+{% /option %}
+{% option %}
+Using ByteBuffer forces the JVM to perform extra bounds checks inside the native code.
+{% /option %}
+{% /choice %}
