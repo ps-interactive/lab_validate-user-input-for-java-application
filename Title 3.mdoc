@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+How did the ArrayListNativeJavaLib and StringBuilderNativeJavaLib examples prevent the buffer overflow demonstrated earlier in the lab?
+{% /question %}
+{% option %}
+They used a special, secure version of the native library.
+{% /option %}
+{% option %}
+They automatically resized the native C buffer using JNI.
+{% /option %}
+{% option answer=true %}
+They checked the input data size in Java before calling the native method, avoiding the call if the input was too large.
+{% /option %}
+{% option %}
+They converted the String to a ByteBuffer before calling the native method.
+{% /option %}
+{% /choice %}
